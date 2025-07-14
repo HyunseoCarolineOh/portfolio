@@ -177,7 +177,7 @@ export default function Home() {
       link.href = "/resume-hyunseo-oh.pdf"
       link.download = "Resume_Hyunseo_Oh.pdf"
     } else {
-      link.href = "/이력서-오현서.pdf"
+      link.href = "/resume-hyunseo-oh-korean.pdf"
       link.download = "이력서_오현서.pdf"
     }
     document.body.appendChild(link)
@@ -192,7 +192,7 @@ export default function Home() {
         {/* Hero Section */}
         <section id="home" className="py-12 md:py-24 lg:py-32 xl:py-40">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
+            <div className="grid gap-6 lg:grid-cols-[1fr_320px] lg:gap-12 xl:grid-cols-[1fr_350px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -219,12 +219,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative aspect-square w-full max-w-[400px] overflow-hidden rounded-full">
+                <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/images/hyunseo-profile.jpg"
                     alt="Hyunseo Oh"
-                    width={400}
-                    height={400}
+                    width={280}
+                    height={280}
                     className="object-cover"
                     priority
                   />
@@ -384,7 +384,7 @@ export default function Home() {
                             </CardDescription>
                             <div className="flex items-center text-muted-foreground text-sm mt-2">
                               <Calendar className="mr-2 h-4 w-4" />
-                              <span>{language === "en" ? "Jan 2024 - May 2025" : "2024년 1월 - 2025년 5월"}</span>
+                              <span>{language === "en" ? "Jan 2025 - Feb 2025" : "2025년 1월 - 2025년 2월"}</span>
                             </div>
                           </div>
                           <button
@@ -455,7 +455,7 @@ export default function Home() {
                     </h3>
                     <p className="text-sm">
                       {language === "en"
-                        ? "UX Analysis and Application, Product Form Factor Studio, Communication Design, Design Psychology, Corporate Design Studio, Design Inquiry, Design Research, Exhibition Design, Transmedia Workshop, Art and Entrepreneurship, Innovation Methodology and Process, Consumer Behavior"
+                        ? "UX Analysis and Application, Product Form Factor Studio, Communication Design, Design Psychology, Corporate Design Studio, Design Exploration, Design Research, Exhibition Design, Transmedia Workshop, Art and Entrepreneurship, Innovation Methodology and Process, Consumer Behavior"
                         : "UX분석과응용, 제품폼팩터스튜디오, 커뮤니케이션디자인, 디자인심리, 기업적디자인스튜디오, 디자인탐구, 디자인리서치, 전시디자인, 트랜스미디어워크숍, 예술과창업, 혁신방법론과프로세스, 소비자행동"}
                     </p>
                   </div>
@@ -511,7 +511,7 @@ export default function Home() {
                 <CardHeader className="flex-grow">
                   <div className="flex flex-col gap-2">
                     <CardTitle className="text-xl">
-                      {language === "en" ? "Revenue growth through funnel analysis" : "예약률 개선을 위한 마케팅 실험"}
+                      {language === "en" ? "Revenue growth through funnel analysis" : "퍼널 분석을 통한 매출 증대"}
                     </CardTitle>
                     <div className="flex items-center text-muted-foreground text-sm">
                       <Calendar className="mr-2 h-4 w-4" />
@@ -539,7 +539,7 @@ export default function Home() {
                 <div className="aspect-video w-full overflow-hidden">
                   <Image
                     src="/images/antiegg-web-cover.jpg"
-                    alt="Corporate Blog Planning"
+                    alt="B2B Blog Design"
                     width={600}
                     height={300}
                     className="w-full h-full object-cover object-center transition-all hover:scale-105"
@@ -548,7 +548,7 @@ export default function Home() {
                 <CardHeader className="flex-grow">
                   <div className="flex flex-col gap-2">
                     <CardTitle className="text-xl">
-                      {language === "en" ? "Corporate Blog Planning" : "기업 블로그 기획"}
+                      {language === "en" ? "B2B Blog Design" : "기업 블로그 기획"}
                     </CardTitle>
                     <div className="flex items-center text-muted-foreground text-sm">
                       <Calendar className="mr-2 h-4 w-4" />
@@ -560,11 +560,11 @@ export default function Home() {
                   <p className="text-sm">
                     {language === "en"
                       ? "Planned and designed a corporate blog for SpaceBase to establish brand rapport and enable sustainable content management without development resources."
-                      : "스페이스베이스의 브랜드 라포 형성을 위한 기업 블로그를 기획하고, 개발 리소스 없이 지속 가능한 콘텐츠 운영이 가능하도록 설계했습니다."}
+                      : "공간 디자인 스튜디오 스페이스베이스의 브랜드 라포 형성을 위한 기업 블로그를 기획했습니다. 개발 리소스 없이 지속 가능한 콘텐츠 운영이 가능하도록 설계했습니다."}
                   </p>
                 </CardContent>
                 <CardFooter className="mt-auto">
-                  <Link href="/projects/marketing-dashboard" className="w-full">
+                  <Link href="/projects/b2b-blog" className="w-full">
                     <Button variant="outline" className="w-full bg-transparent">
                       {language === "en" ? "View More" : "더보기"}
                     </Button>
@@ -585,7 +585,7 @@ export default function Home() {
                 <CardHeader className="flex-grow">
                   <div className="flex flex-col gap-2">
                     <CardTitle className="text-xl">
-                      {language === "en" ? "INSPIROOM AI Chatbot Development" : "INSPIROOM AI 챗봇 개발"}
+                      {language === "en" ? "AI Chatbot Development" : "고객응대 AI 챗봇 개발"}
                     </CardTitle>
                     <div className="flex items-center text-muted-foreground text-sm">
                       <Calendar className="mr-2 h-4 w-4" />
@@ -687,11 +687,9 @@ export default function Home() {
                             "A/B Testing",
                             "Problem Definition",
                             "Pricing Strategy",
-                            "End-to-End Operations",
                             "CRM Marketing",
                             "Funnel Optimization",
                             "Customer Segmentation",
-                            "Conversion Rate Optimization",
                           ]
                         : [
                             "퍼포먼스 마케팅",

@@ -36,7 +36,7 @@ const projects = {
       },
       hypothesis: {
         en: "If exposure increases through advertising, bookings will also increase.",
-        ko: "광고를 집행하면 노출이 주당 100회에서 1,000회로 증가하고, 그 중 1%가 예약으로 전환될 것이다.",
+        ko: "광고를 집행하면 노출이 주당 100회에서 1,000회로 증가하고, 그 중 1%가 예약으로 전환되어 주당 10건의 예약이 발생할 것이다.",
       },
       solution: {
         en: "Started online advertising campaigns to increase daily exposure from 5,000 to over 14,000, significantly boosting our visibility on the platform.",
@@ -72,11 +72,11 @@ const projects = {
       },
       solution: {
         en: "Thumbnail Strategy Improvement: 1) Re-photographed thumbnails to create visually appealing images, 2) Added '1,000 KRW for early morning hours' text to thumbnails to emphasize price attractiveness. This strategy provided incentives for users to click, significantly improving CTR (click-through rate).",
-        ko: "썸네일을 개선하기 위해 썸네일을 구성하는 요소들을 모두 분리해서 살펴보았습니다. 썸네일은 크게 사진, 제목, 가격, 댓글/좋아요 수 등으로 구성됩니다.",
+        ko: "썸네일을 개선하기 위해 썸네일을 구성하는 요소들을 모두 분리해서 살펴본 다음, 아래 표와 같이 요소별로 분석하고 우선순위가 높은 요소는 개선방향을 고민하여 실제로 썸네일에 반영했습니다.",
       },
       results: {
         en: "After thumbnail improvements, click-through rates increased and bookings also increased significantly. Features: Both CTR and bookings showed meaningful growth together.",
-        ko: "썸네일 개선 이후 클릭률이 유의미하게 상승했습니다. .",
+        ko: "썸네일 업데이트(8/31) 이후 클릭률이 유의미하게 상승했습니다. 노출만 이루어지던 이전과 달리 노출수가 많아지면 클릭수도 함께 상승하는 모습을 데이터에서 확인할 수 있었습니다. 1,671 도달 중 예약이 20건 발생해 1단계 가설에서 목표로 했던 것(1%)보다 더 많은 고객(1.2%)이 구매로 전환되었습니다.",
       },
       metrics: {
         input: {
@@ -94,17 +94,11 @@ const projects = {
       ko: "두 번에 걸친 퍼널 개선을 통해 주당 예약수를 0회에서 20회까지 높였습니다. 노출부터 클릭, 전환까지 각 퍼널 단계의 체계적인 분석을 통해 특정 병목 지점을 식별하고 해결할 수 있었으며, 결과적으로 인스퍼룸을 적자 상태에서 월 200만원의 지속적인 매출을 내는 사업체로 발전시켰습니다.",
     },
     lessonsLearned: {
-      en: "1) Simply increasing traffic alone makes it difficult to expect substantial results (increased bookings). 2) Click-inducing elements in content (thumbnails) can be key factors for performance improvement. 3) Reflecting elements that users want to click can have a positive impact down to the bottom of the funnel. 4) Setting separate hypotheses and measurement metrics for each funnel stage is important for establishing effective improvement strategies.",
+      en: "I realized that running ads isn’t always the answer. While ads can definitely boost traffic, if there’s an issue with the click-through rate (CTR), no amount of traffic will lead to conversions.",
       ko: "광고 집행이 모든 상황에서 답이 되지는 않는다는 것을 깨달았습니다. 광고는 트래픽을 확실하게 개선시킬 수 있기는 하지만, CTR에 문제가 있으면 트래픽이 아무리 많이 늘어봤자 전환으로 이어지지 않기 때문입니다.",
     },
     technologies: {
-      en: [
-        "Problem Definition",
-        "Hypothesis", 
-        "Growth Marketing",
-        "Pricing Strategy",
-        "Data Analysis",
-      ],
+      en: ["Problem Definition", "Hypothesis", "Growth Marketing", "Pricing Strategy", "Data Analysis"],
       ko: ["문제 정의", "가설 설정", "그로스 마케팅", "가격 전략", "데이터 분석"],
     },
     images: [
@@ -114,35 +108,35 @@ const projects = {
     ],
     relatedLinks: [
       {
-        title: "Inspiroom 스페이스클라우드 바로가기",
+        title: "Inspiroom",
         url: "https://www.spacecloud.kr/space/64161",
       },
     ],
   },
-  "marketing-dashboard": {
+  "b2b-blog": {
     title: {
-      en: "Corporate Blog Planning",
+      en: "B2B Blog Design",
       ko: "기업 블로그 기획",
     },
     description: {
       en: "Planned and designed a corporate blog for SpaceBase to establish brand rapport and enable sustainable content management without development resources.",
-      ko: "스페이스베이스의 브랜드 라포 형성을 위한 기업 블로그를 기획하고, 개발 리소스 없이 지속 가능한 콘텐츠 운영이 가능하도록 설계했습니다.",
+      ko: "공간 디자인 스튜디오 스페이스베이스의 브랜드 라포 형성을 위한 기업 블로그를 기획했습니다. 개발 리소스 없이 지속 가능한 콘텐츠 운영이 가능하도록 설계했습니다.",
     },
     period: {
-      en: "Jan 2024 - May 2025",
-      ko: "2024년 1월 - 2025년 5월",
+      en: "Jan 2024 - Feb 2025",
+      ko: "2025년 1월 - 2025년 2월",
     },
     problemDefinition: {
       en: "SpaceBase recognized the need for corporate blog operation but lacked production capacity. They expected the blog to serve as a starting point for brand rapport formation, being more approachable than formal corporate introduction meetings.",
-      ko: "스페이스베이스는 기업 블로그 운영의 필요성을 인식하고 있었지만, 제작 여력이 부족한 상태였습니다. 기업 소개 미팅은 부담스럽지만, 블로그는 가볍게 접근 가능하다는 점에서 블로그가 브랜드 라포 형성의 출발점이 되기를 기대했습니다.",
+      ko: "공간 디자인 스튜디오 스페이스베이스는 인바운드 유입을 늘리기 위한 채널 중 하나로 기업 블로그 운영의 필요성을 인식하고 있었지만, 팀 내부에 개발자가 없어 제작 여력이 부족하고, 블로그를 개발한다 하더라도 관리를 할 수 없는 상태였습니다.",
     },
     hypothesis: {
       en: "By creating a user-friendly blog structure that balances client preferences with brand consistency, we can establish an effective brand communication channel that requires minimal maintenance.",
       ko: "클라이언트의 화려한 UI 선호와 기존 브랜드 무드 유지 간 균형 고려한 사용자 친화적 블로그 구조를 만들면, 최소한의 유지보수로 효과적인 브랜드 커뮤니케이션 채널을 구축할 수 있을 것입니다.",
     },
     solution: {
-      en: "① Information Architecture & Wireframe Design: Balanced client's preference for flashy UI with existing brand mood maintenance. Designed GNB to connect to existing site to avoid duplication with Contact and About pages. ② Framer CMS Implementation: Set up Framer CMS to enable content publishing without coding. Configured user-centric structure considering content publishing/editing/distribution from operator's perspective.",
-      ko: "① 정보구조(IA) 및 와이어프레임 설계: 클라이언트의 화려한 UI 선호와 기존 브랜드 무드 유지 간 균형 고려. 기존 홈페이지의 Contact 및 About 페이지와의 중복을 방지하기 위해 GNB에서 기존 사이트로 연결되도록 설계. ② 프레이머 CMS 활용: 프레이머 CMS를 통해 코딩 없이 콘텐츠 발행 가능하도록 세팅. 실제 운영자 관점에서 콘텐츠 발행/수정/배포 과정을 고려해 사용자 중심 구성.",
+      en: "① Information Architecture & Wireframe Design: Balanced client's preference for flashy UI with existing brand mood maintenance. Designed GNB to connect to existing site to avoid duplication with Contact and About pages. \n\n ② Framer CMS Implementation: Set up Framer CMS to enable content publishing without coding. Configured user-centric structure considering content publishing/editing/distribution from operator's perspective.",
+      ko: "Framer를 이용해 코딩 없이도 새로운 글 작성과 발행이 용이하도록 설계했습니다.",
     },
     results: {
       en: "Launched a complete website without development resources. Secured sustainability and independence for clients to directly manage content. Visual materials (wireframes) facilitated internal decision-making processes and enhanced planning clarity and persuasiveness.",
@@ -156,15 +150,11 @@ const projects = {
       en: ["Framer CMS", "Information Architecture", "Wireframing", "UX Design", "Content Strategy"],
       ko: ["프레이머 CMS", "정보 구조", "와이어프레임", "UX 디자인", "콘텐츠 전략"],
     },
-    images: [
-      "/placeholder.svg?height=400&width=800&text=Blog+Information+Architecture",
-      "/placeholder.svg?height=400&width=800&text=Wireframe+Design+Process",
-      "/placeholder.svg?height=400&width=800&text=Framer+CMS+Setup",
-    ],
+    images: ["/images/antiegg-web-cover.jpg"],
     relatedLinks: [
       {
-        title: "ANTIEGG 웹사이트",
-        url: "https://antiegg.kr",
+        title: "Spacebase Blog",
+        url: "https://spacebase.co.kr/",
       },
     ],
   },
@@ -205,11 +195,7 @@ const projects = {
       en: ["GA4", "A/B Testing", "Web Analytics", "Conversion Optimization", "UX Design"],
       ko: ["GA4", "A/B 테스트", "웹 분석", "전환 최적화", "UX 디자인"],
     },
-    images: [
-      "/placeholder.svg?height=400&width=800&text=GA4+User+Behavior+Analysis",
-      "/placeholder.svg?height=400&width=800&text=Banner+Design+Variations",
-      "/placeholder.svg?height=400&width=800&text=CTR+Improvement+Results",
-    ],
+    images: [],
     relatedLinks: [
       {
         title: "ANTIEGG 웹사이트",
@@ -219,8 +205,8 @@ const projects = {
   },
   "ai-chatbot": {
     title: {
-      en: "INSPIROOM AI Chatbot Development",
-      ko: "INSPIROOM AI 챗봇 개발",
+      en: "AI Chatbot Development",
+      ko: "고객응대 AI 챗봇 개발",
     },
     description: {
       en: "Developed an AI chatbot to automate repetitive customer inquiries and additional booking processes, significantly improving operational efficiency and revenue.",
@@ -239,8 +225,8 @@ const projects = {
       ko: "자주 묻는 질문에 대한 응답을 자동화하고 추가예약 프로세스를 간소화하면, 운영 부담을 줄이면서 놓치고 있던 매출 기회를 포착할 수 있을 것입니다.",
     },
     solution: {
-      en: "① AI Chatbot Auto-Response: Converted frequently asked questions to automatic responses. Continuously improved and tuned response content to prevent inappropriate answers. Successfully enabled chatbot to handle over 60% of total inquiries. ② Additional Booking Process Automation: Previous: Manual SpaceCloud checking and price calculation when users inquired about additional bookings. Improved: Chatbot directly provides remaining time check links and price tables → customers can judge booking availability themselves and make payments.",
-      ko: "① AI 챗봇 자동 응답 구축: 자주 묻는 질문을 자동 응답으로 전환. 챗봇이 이상한 답변을 하지 않도록 지속적으로 응답 내용을 개선 및 튜닝. 결과적으로 전체 문의 중 60% 이상을 챗봇이 대응 가능하게 구현. ② 추가예약 프로세스 자동화: 기존에는 사용자가 추가예약 문의 시 수동으로 스페이스클라우드 확인 및 가격 계산 후 답변했으나, 개선 후에는 챗봇이 직접 잔여 시간 확인 링크 및 가격 테이블을 안내하여 고객이 스스로 예약 가능 여부를 판단 후 입금할 수 있도록 구현.",
+      en: "① AI Chatbot Auto-Response: Converted frequently asked questions to automatic responses. Continuously improved and tuned response content to prevent inappropriate answers. Successfully enabled chatbot to handle over 60% of total inquiries.\n\n② Additional Booking Process Automation: Previous: Manual SpaceCloud checking and price calculation when users inquired about additional bookings. Improved: Chatbot directly provides remaining time check links and price tables → customers can judge booking availability themselves and make payments.",
+      ko: "① AI 챗봇 자동 응답 구축: 자주 묻는 질문을 자동 응답으로 전환. 챗봇이 이상한 답변을 하지 않도록 지속적으로 응답 내용을 개선 및 튜닝. 결과적으로 전체 문의 중 60% 이상을 챗봇이 대응 가능하게 구현.\n\n② 추가예약 프로세스 자동화: 기존에는 사용자가 추가예약 문의 시 수동으로 스페이스클라우드 확인 및 가격 계산 후 답변했으나, 개선 후에는 챗봇이 직접 잔여 시간 확인 링크 및 가격 테이블을 안내하여 고객이 스스로 예약 가능 여부를 판단 후 입금할 수 있도록 구현.",
     },
     results: {
       en: "Revenue from additional bookings increased 2.1 times compared to before chatbot implementation. Operators were freed from repetitive tasks, and users received immediate responses, leading to increased satisfaction.",
@@ -260,15 +246,11 @@ const projects = {
       ],
       ko: ["AI 챗봇", "자연어 처리", "프로세스 자동화", "고객 서비스", "수익 최적화"],
     },
-    images: [
-      "/placeholder.svg?height=400&width=800&text=AI+Chatbot+Interface+Design",
-      "/placeholder.svg?height=400&width=800&text=Automated+Booking+Process+Flow",
-      "/placeholder.svg?height=400&width=800&text=Revenue+Increase+Analytics",
-    ],
+    images: ["/images/inspiroom-chatbot-interface.png"],
     relatedLinks: [
       {
-        title: "Inspiroom 네이버 플레이스",
-        url: "https://naver.me/xX70GlkZ",
+        title: "AI Chatbot",
+        url: "http://pf.kakao.com/_yqIxdn/chat",
       },
     ],
   },
@@ -294,6 +276,9 @@ export default function ProjectDetail() {
           <h1 className="text-2xl font-bold mb-4">
             {language === "en" ? "Project Not Found" : "프로젝트를 찾을 수 없습니다"}
           </h1>
+          <p className="text-muted-foreground mb-4">
+            {language === "en" ? `Project "${slug}" does not exist.` : `"${slug}" 프로젝트가 존재하지 않습니다.`}
+          </p>
           <Link href="/">
             <Button>
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -318,21 +303,21 @@ export default function ProjectDetail() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              {project.title[language as keyof typeof project.title]}
+              {project.title?.[language as keyof typeof project.title] || "Title not available"}
             </h1>
             <p className="text-lg text-muted-foreground mb-4">
-              {project.description[language as keyof typeof project.description]}
+              {project.description?.[language as keyof typeof project.description] || "Description not available"}
             </p>
             <div className="flex items-center text-muted-foreground mb-6">
               <Calendar className="mr-2 h-4 w-4" />
-              <span>{project.period[language as keyof typeof project.period]}</span>
+              <span>{project.period?.[language as keyof typeof project.period] || "Period not available"}</span>
             </div>
             <div className="flex flex-wrap gap-2 mb-6">
-              {project.technologies[language as keyof typeof project.technologies].map((tech) => (
+              {project.technologies?.[language as keyof typeof project.technologies]?.map((tech) => (
                 <Badge key={tech} variant="secondary">
                   {tech}
                 </Badge>
-              ))}
+              )) || null}
             </div>
 
             {/* Related Links */}
@@ -356,7 +341,7 @@ export default function ProjectDetail() {
 
           <div className="grid gap-8">
             {/* Funnel Analysis Project - Two Stage Approach */}
-            {slug === "funnel_analysis" && (
+            {slug === "funnel_analysis" && project.stage1 && project.stage2 && (
               <>
                 {/* Stage 1 */}
                 <div className="space-y-6">
@@ -372,7 +357,9 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base">
-                        {project.stage1.problemDefinition[language as keyof typeof project.stage1.problemDefinition]}
+                        {project.stage1.problemDefinition?.[
+                          language as keyof typeof project.stage1.problemDefinition
+                        ] || "Content not available"}
                       </p>
                     </CardContent>
                   </Card>
@@ -383,16 +370,15 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base mb-4">
-                        {
-                          project.stage1.hypothesisDescription[
-                            language as keyof typeof project.stage1.hypothesisDescription
-                          ]
-                        }
+                        {project.stage1.hypothesisDescription?.[
+                          language as keyof typeof project.stage1.hypothesisDescription
+                        ] || "Content not available"}
                       </p>
 
                       <div className="mb-4">
                         <p className="text-base bg-muted/30 p-3 rounded-md border-l-4 border-primary">
-                          {project.stage1.hypothesis[language as keyof typeof project.stage1.hypothesis]}
+                          {project.stage1.hypothesis?.[language as keyof typeof project.stage1.hypothesis] ||
+                            "Hypothesis not available"}
                         </p>
                       </div>
 
@@ -412,10 +398,14 @@ export default function ProjectDetail() {
                           <tbody>
                             <tr className="bg-muted/50">
                               <td className="px-4 py-3 rounded-bl-lg border-r-2 border-muted/50">
-                                {project.stage1.metrics.input[language as keyof typeof project.stage1.metrics.input]}
+                                {project.stage1.metrics?.input?.[
+                                  language as keyof typeof project.stage1.metrics.input
+                                ] || "Input metric not available"}
                               </td>
                               <td className="px-4 py-3 rounded-br-lg">
-                                {project.stage1.metrics.output[language as keyof typeof project.stage1.metrics.output]}
+                                {project.stage1.metrics?.output?.[
+                                  language as keyof typeof project.stage1.metrics.output
+                                ] || "Output metric not available"}
                               </td>
                             </tr>
                           </tbody>
@@ -430,7 +420,8 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base">
-                        {project.stage1.solution[language as keyof typeof project.stage1.solution]}
+                        {project.stage1.solution?.[language as keyof typeof project.stage1.solution] ||
+                          "Solution not available"}
                       </p>
                     </CardContent>
                   </Card>
@@ -441,7 +432,8 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base mb-4">
-                        {project.stage1.results[language as keyof typeof project.stage1.results]}
+                        {project.stage1.results?.[language as keyof typeof project.stage1.results] ||
+                          "Results not available"}
                       </p>
                       <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
                         <Image
@@ -470,7 +462,9 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base mb-4">
-                        {project.stage2.problemDefinition[language as keyof typeof project.stage2.problemDefinition]}
+                        {project.stage2.problemDefinition?.[
+                          language as keyof typeof project.stage2.problemDefinition
+                        ] || "Content not available"}
                       </p>
                       <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
                         <Image
@@ -490,16 +484,15 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base mb-4">
-                        {
-                          project.stage2.hypothesisDescription[
-                            language as keyof typeof project.stage2.hypothesisDescription
-                          ]
-                        }
+                        {project.stage2.hypothesisDescription?.[
+                          language as keyof typeof project.stage2.hypothesisDescription
+                        ] || "Content not available"}
                       </p>
 
                       <div className="mb-4">
                         <p className="text-base bg-muted/30 p-3 rounded-md border-l-4 border-primary">
-                          {project.stage2.hypothesis[language as keyof typeof project.stage2.hypothesis]}
+                          {project.stage2.hypothesis?.[language as keyof typeof project.stage2.hypothesis] ||
+                            "Hypothesis not available"}
                         </p>
                       </div>
 
@@ -519,10 +512,14 @@ export default function ProjectDetail() {
                           <tbody>
                             <tr className="bg-muted/50">
                               <td className="px-4 py-3 rounded-bl-lg border-r-2 border-muted/50">
-                                {project.stage2.metrics.input[language as keyof typeof project.stage2.metrics.input]}
+                                {project.stage2.metrics?.input?.[
+                                  language as keyof typeof project.stage2.metrics.input
+                                ] || "Input metric not available"}
                               </td>
                               <td className="px-4 py-3 rounded-br-lg">
-                                {project.stage2.metrics.output[language as keyof typeof project.stage2.metrics.output]}
+                                {project.stage2.metrics?.output?.[
+                                  language as keyof typeof project.stage2.metrics.output
+                                ] || "Output metric not available"}
                               </td>
                             </tr>
                           </tbody>
@@ -546,7 +543,8 @@ export default function ProjectDetail() {
                         />
                       </div>
                       <p className="text-base mb-4">
-                        {project.stage2.solution[language as keyof typeof project.stage2.solution]}
+                        {project.stage2.solution?.[language as keyof typeof project.stage2.solution] ||
+                          "Solution not available"}
                       </p>
                       <div className="overflow-x-auto">
                         <table className="w-full border-collapse rounded-lg">
@@ -681,7 +679,8 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base mb-4">
-                        {project.stage2.results[language as keyof typeof project.stage2.results]}
+                        {project.stage2.results?.[language as keyof typeof project.stage2.results] ||
+                          "Results not available"}
                       </p>
                       <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
                         <Image
@@ -704,7 +703,8 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base">
-                        {project.overallResults[language as keyof typeof project.overallResults]}
+                        {project.overallResults?.[language as keyof typeof project.overallResults] ||
+                          "Results not available"}
                       </p>
                     </CardContent>
                   </Card>
@@ -715,7 +715,8 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base">
-                        {project.lessonsLearned[language as keyof typeof project.lessonsLearned]}
+                        {project.lessonsLearned?.[language as keyof typeof project.lessonsLearned] ||
+                          "Lessons not available"}
                       </p>
                     </CardContent>
                   </Card>
@@ -727,16 +728,16 @@ export default function ProjectDetail() {
             {slug !== "funnel_analysis" && (
               <>
                 {/* Different image placement based on project */}
-                {slug === "marketing-dashboard" && (
+                {(slug === "b2b-blog" || slug === "ai-chatbot") && project.images && project.images.length > 0 && (
                   <div className="grid gap-4 mb-8">
                     {project.images.map((image, index) => (
                       <div key={index} className="aspect-video w-full overflow-hidden rounded-lg">
                         <Image
                           src={image || "/placeholder.svg"}
-                          alt={`${project.title[language as keyof typeof project.title]} - Image ${index + 1}`}
+                          alt={`${project.title?.[language as keyof typeof project.title] || "Project"} - Image ${index + 1}`}
                           width={800}
                           height={400}
-                          className="w-full object-cover"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     ))}
@@ -749,44 +750,35 @@ export default function ProjectDetail() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-base">
-                      {project.problemDefinition[language as keyof typeof project.problemDefinition]}
+                      {project.problemDefinition?.[language as keyof typeof project.problemDefinition] ||
+                        "Problem definition not available"}
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle>{language === "en" ? "Hypothesis" : "가설"}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-base">{project.hypothesis[language as keyof typeof project.hypothesis]}</p>
-                  </CardContent>
-                </Card>
+                {project.hypothesis && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>{language === "en" ? "Hypothesis" : "가설"}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-base">
+                        {project.hypothesis[language as keyof typeof project.hypothesis] || "Hypothesis not available"}
+                      </p>
+                    </CardContent>
+                  </Card>
+                )}
 
                 <Card>
                   <CardHeader>
                     <CardTitle>{language === "en" ? "Solution" : "실행 과정"}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-base">{project.solution[language as keyof typeof project.solution]}</p>
+                    <div className="text-base whitespace-pre-line">
+                      {project.solution?.[language as keyof typeof project.solution] || "Solution not available"}
+                    </div>
                   </CardContent>
                 </Card>
-
-                {(slug === "ecommerce-redesign" || slug === "ai-chatbot") && (
-                  <div className="grid gap-4 my-8">
-                    {project.images.map((image, index) => (
-                      <div key={index} className="aspect-video w-full overflow-hidden rounded-lg">
-                        <Image
-                          src={image || "/placeholder.svg"}
-                          alt={`${project.title[language as keyof typeof project.title]} - Image ${index + 1}`}
-                          width={800}
-                          height={400}
-                          className="w-full object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <Card>
@@ -794,7 +786,9 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Results" : "성과"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-base">{project.results[language as keyof typeof project.results]}</p>
+                      <p className="text-base">
+                        {project.results?.[language as keyof typeof project.results] || "Results not available"}
+                      </p>
                     </CardContent>
                   </Card>
 
@@ -804,7 +798,8 @@ export default function ProjectDetail() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-base">
-                        {project.lessonsLearned[language as keyof typeof project.lessonsLearned]}
+                        {project.lessonsLearned?.[language as keyof typeof project.lessonsLearned] ||
+                          "Lessons not available"}
                       </p>
                     </CardContent>
                   </Card>
