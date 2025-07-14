@@ -18,8 +18,8 @@ const projects = {
       ko: "퍼널 분석을 통한 매출 증대",
     },
     description: {
-      en: "Improved weekly bookings from 1-2 to over 6 by iterating on solutions derived from customer funnel analysis for Inspiroom space rental business.",
-      ko: "데이터 기반 마케팅 실험을 통해 매출을 1133% 증대시켰습니다.",
+      en: "Improved weekly bookings by 1133% through iterative testing of solutions derived from customer funnel analysis in a space rental business.",
+      ko: "공간대여 사업에서 데이터 기반 마케팅 실험을 통해 퍼널을 개선하고 매출을 1133% 증대시켰습니다.",
     },
     period: {
       en: "Aug 2024 - Nov 2024",
@@ -28,19 +28,23 @@ const projects = {
     stage1: {
       problemDefinition: {
         en: "Through advertising, traffic (exposure) increased, but there was no change in actual bookings. This suggests that while the top-of-funnel 'exposure' stage was improved, bottlenecks occurred in the middle stage 'clicks' or bottom stage 'bookings'.",
-        ko: "광고를 통해 트래픽(노출)은 증가했지만, 실제 예약 수에는 변화가 없었습니다. 이는 퍼널 상단에 해당하는 '노출' 단계는 개선되었으나, 중간 단계인 '클릭' 혹은 하단 단계인 '예약'에서 병목 현상이 발생하고 있음을 시사합니다.",
+        ko: "서비스 초기, 예약이 들어오지 않아 매출이 저조했습니다. 예약수가 저조했던 원인을 분석한 결과 공간이 플랫폼에서 거의 노출되지 않는다는 점을 발견했습니다. 예약 이전에 유입 자체가 일어나지 않았던 상황이었습니다.",
+      },
+      hypothesisDescription: {
+        en: "Based on the analysis that low bookings were due to insufficient exposure on the platform, we developed the following hypothesis:",
+        ko: "플랫폼에서의 노출 부족이 예약 저조의 원인이라는 분석을 바탕으로 다음과 같은 가설을 세웠습니다:",
       },
       hypothesis: {
         en: "If exposure increases through advertising, bookings will also increase.",
-        ko: "광고를 통해 노출이 증가하면 예약수도 증가할 것이다.",
+        ko: "광고를 집행하면 노출이 주당 100회에서 1,000회로 증가하고, 그 중 1%가 예약으로 전환될 것이다.",
       },
       solution: {
         en: "Started online advertising campaigns to increase daily exposure from 5,000 to over 14,000, significantly boosting our visibility on the platform.",
-        ko: "온라인 광고 캠페인을 시작하여 일일 노출 수를 5,000회에서 14,000회 이상으로 증가시켜 플랫폼에서의 가시성을 크게 높였습니다.",
+        ko: "인스퍼룸이 입점되어 있는 플랫폼인 스페이스클라우드 내부에서 광고를 집행했습니다. 여러 가지 광고상품들 중 가장 효과적인 광고상품을 찾기 위해 3주간 같은 요일에 다른 광고상품을 집행했고, 지역필터, 상권형키워드, 유형리스트 세 가지의 광고상품 중 가장 성과가 좋았던 지역필터를 실험에서 사용할 솔루션으로 선정해 한 달 간 광고를 집행했습니다.",
       },
       results: {
         en: "Exposure increased significantly, but bookings did not increase → This raised the possibility of issues with click-through rates or thumbnail strategy.",
-        ko: "노출은 증가했지만 예약수는 증가하지 않음 → 클릭률 혹은 썸네일 전략의 문제일 가능성 제기.",
+        ko: "그 결과, 노출은 주당 1,137회로 예상보다 많이 증가했지만, 예약수는 주당 4회로 예약률은 0.35%였으며 실험 전(주당 3회) 대비 변화가 미미했습니다.",
       },
       metrics: {
         input: {
@@ -56,19 +60,23 @@ const projects = {
     stage2: {
       problemDefinition: {
         en: "Despite increased exposure, booking rates remained low. Analysis revealed that users were not clicking on our listings, likely due to unappealing thumbnails that failed to capture attention and generate interest.",
-        ko: "노출이 증가했음에도 불구하고 예약률은 여전히 낮았습니다. 분석 결과, 사용자들이 우리 리스팅을 클릭하지 않고 있었으며, 이는 관심을 끌지 못하는 매력적이지 않은 썸네일 때문인 것으로 판단되었습니다.",
+        ko: "노출이 증가했음에도 불구하고 예약수가 늘어나지 않은 이유는 노출이 클릭으로 이어지지 않았기 때문이었습니다. 노출은 104회에서 1,137회로 10배 넘 늘어난 데 비해, 클릭은 47회에서 249회로 약 5배 증가하여 노출에 비례해 늘어나지 않았습니다.",
+      },
+      hypothesisDescription: {
+        en: "Users on SpaceCloud typically decide whether to click based on the information they see at first glance. Therefore, we hypothesized:",
+        ko: "스페이스클라우드를 이용하는 사용자는 대부분 파티룸을 처음 접했을 때 정보를 바탕으로 클릭할 지 말 지를 결정합니다. 첫 눈에 노출되는 정보, 즉 썸네일을 매력적으로 보이게 만든다면 클릭수가 늘어나 결론적으로 예약수 증가로 이어질 것이라고 생각했고 따라서 다음과 같은 가설을 세웠습니다:",
       },
       hypothesis: {
         en: "If we use thumbnails that users want to click, both click-through rates and bookings will increase together.",
-        ko: "클릭하고 싶은 썸네일을 사용하면 클릭률과 예약수가 함께 증가할 것이다.",
+        ko: "기존 썸네일에서 매력적인 썸네일로 썸네일을 교체하면 클릭률이 21.9%에서 40%로 증가할 것이다.",
       },
       solution: {
         en: "Thumbnail Strategy Improvement: 1) Re-photographed thumbnails to create visually appealing images, 2) Added '1,000 KRW for early morning hours' text to thumbnails to emphasize price attractiveness. This strategy provided incentives for users to click, significantly improving CTR (click-through rate).",
-        ko: "썸네일 전략 개선: 1) 썸네일 사진을 다시 촬영하여 시각적으로 매력적인 이미지 구성, 2) 썸네일에 '새벽시간대 1000원'이라는 문구를 넣어 가격 매력을 강조. 이러한 전략은 클릭하고 싶은 유인을 제공함으로써 CTR(클릭률)을 유의미하게 향상시켰습니다.",
+        ko: "썸네일을 개선하기 위해 썸네일을 구성하는 요소들을 모두 분리해서 살펴보았습니다. 썸네일은 크게 사진, 제목, 가격, 댓글/좋아요 수 등으로 구성됩니다.",
       },
       results: {
         en: "After thumbnail improvements, click-through rates increased and bookings also increased significantly. Features: Both CTR and bookings showed meaningful growth together.",
-        ko: "썸네일 개선 이후 클릭률이 상승했고, 예약 수 역시 유의미하게 증가함. 특징: 클릭률과 예약 수가 함께 의미있는 성장을 보임.",
+        ko: "썸네일 개선 이후 클릭률이 유의미하게 상승했습니다. .",
       },
       metrics: {
         input: {
@@ -83,20 +91,22 @@ const projects = {
     },
     overallResults: {
       en: "Through this two-stage approach, weekly bookings improved from 1-2 to over 6. The systematic analysis of each funnel stage - from exposure to click-through to conversion - enabled us to identify and solve specific bottlenecks, resulting in sustainable revenue growth.",
-      ko: "이러한 2단계 접근법을 통해 주 평균 예약 수를 1-2건에서 6건 이상으로 개선했습니다. 노출부터 클릭, 전환까지 각 퍼널 단계의 체계적인 분석을 통해 특정 병목 지점을 식별하고 해결할 수 있었으며, 이는 지속 가능한 매출 성장으로 이어졌습니다.",
+      ko: "두 번에 걸친 퍼널 개선을 통해 주당 예약수를 0회에서 20회까지 높였습니다. 노출부터 클릭, 전환까지 각 퍼널 단계의 체계적인 분석을 통해 특정 병목 지점을 식별하고 해결할 수 있었으며, 결과적으로 인스퍼룸을 적자 상태에서 월 200만원의 지속적인 매출을 내는 사업체로 발전시켰습니다.",
     },
     lessonsLearned: {
       en: "1) Simply increasing traffic alone makes it difficult to expect substantial results (increased bookings). 2) Click-inducing elements in content (thumbnails) can be key factors for performance improvement. 3) Reflecting elements that users want to click can have a positive impact down to the bottom of the funnel. 4) Setting separate hypotheses and measurement metrics for each funnel stage is important for establishing effective improvement strategies.",
-      ko: "1) 단순히 트래픽만 증가시켜서는 실질적인 성과(예약수 증가)를 기대하기 어렵다. 2) 콘텐츠(썸네일)의 클릭 유도 요소가 성과 개선의 핵심 요인이 될 수 있다. 3) 사용자 입장에서 클릭하고 싶은 요소를 반영하는 것이 퍼널 하단까지 긍정적인 영향을 미칠 수 있다. 4) 퍼널 각 단계에 대해 별도의 가설과 측정 지표를 설정하는 것이 효과적인 개선 전략 수립에 중요하다.",
+      ko: "광고 집행이 모든 상황에서 답이 되지는 않는다는 것을 깨달았습니다. 광고는 트래픽을 확실하게 개선시킬 수 있기는 하지만, CTR에 문제가 있으면 트래픽이 아무리 많이 늘어봤자 전환으로 이어지지 않기 때문입니다.",
     },
-    technologies: [
-      "SpaceCloud Dashboard",
-      "Online Advertising",
-      "A/B Testing",
-      "Photography",
-      "Pricing Strategy",
-      "Data Analysis",
-    ],
+    technologies: {
+      en: [
+        "Problem Definition",
+        "Hypothesis", 
+        "Growth Marketing",
+        "Pricing Strategy",
+        "Data Analysis",
+      ],
+      ko: ["문제 정의", "가설 설정", "그로스 마케팅", "가격 전략", "데이터 분석"],
+    },
     images: [
       "/images/stage1-exposure-vs-bookings-chart.png",
       "/images/stage2-ctr-bookings-chart.png",
@@ -142,7 +152,10 @@ const projects = {
       en: "UX should consider not only website users but also administrators. Clear and concise documentation is necessary for communicating with internal and external stakeholders, beyond just good verbal communication.",
       ko: "UX는 웹사이트를 이용하는 사람뿐 아니라 관리하는 사람도 고려해야 합니다. 내외부 이해관계자와 소통하기 위해서는 말을 잘하는 것도 중요하지만, 명확하고 간결한 문서화가 필요합니다.",
     },
-    technologies: ["Framer CMS", "Information Architecture", "Wireframing", "UX Design", "Content Strategy"],
+    technologies: {
+      en: ["Framer CMS", "Information Architecture", "Wireframing", "UX Design", "Content Strategy"],
+      ko: ["프레이머 CMS", "정보 구조", "와이어프레임", "UX 디자인", "콘텐츠 전략"],
+    },
     images: [
       "/placeholder.svg?height=400&width=800&text=Blog+Information+Architecture",
       "/placeholder.svg?height=400&width=800&text=Wireframe+Design+Process",
@@ -188,7 +201,10 @@ const projects = {
       en: "Data-driven design decisions are more effective than intuition-based approaches. Continuous testing and iteration are key to sustained improvement.",
       ko: "데이터 기반 디자인 결정이 직관 기반 접근법보다 효과적입니다. 지속적인 테스트와 반복이 지속적인 개선의 핵심입니다.",
     },
-    technologies: ["GA4", "A/B Testing", "Web Analytics", "Conversion Optimization", "UX Design"],
+    technologies: {
+      en: ["GA4", "A/B Testing", "Web Analytics", "Conversion Optimization", "UX Design"],
+      ko: ["GA4", "A/B 테스트", "웹 분석", "전환 최적화", "UX 디자인"],
+    },
     images: [
       "/placeholder.svg?height=400&width=800&text=GA4+User+Behavior+Analysis",
       "/placeholder.svg?height=400&width=800&text=Banner+Design+Variations",
@@ -234,13 +250,16 @@ const projects = {
       en: "Automation can be a tool to capture missed opportunities. Chatbots are also subjects of user experience design, requiring design that considers user flow and emotions rather than just mechanical accuracy. What customers truly want may not always align with conventional UX/UI wisdom.",
       ko: "자동화는 놓치고 있던 기회를 포착하는 도구가 될 수 있습니다. 챗봇도 일종의 사용자 경험 설계 대상이며, 기계적 정확성보다 사용자 흐름과 감정을 고려한 설계가 필요합니다. 고객이 진정으로 원하는 것이 일반적인 UX/UI의 상식과 일치하지 않을 수도 있습니다.",
     },
-    technologies: [
-      "AI Chatbot",
-      "Natural Language Processing",
-      "Process Automation",
-      "Customer Service",
-      "Revenue Optimization",
-    ],
+    technologies: {
+      en: [
+        "AI Chatbot",
+        "Natural Language Processing",
+        "Process Automation",
+        "Customer Service",
+        "Revenue Optimization",
+      ],
+      ko: ["AI 챗봇", "자연어 처리", "프로세스 자동화", "고객 서비스", "수익 최적화"],
+    },
     images: [
       "/placeholder.svg?height=400&width=800&text=AI+Chatbot+Interface+Design",
       "/placeholder.svg?height=400&width=800&text=Automated+Booking+Process+Flow",
@@ -309,7 +328,7 @@ export default function ProjectDetail() {
               <span>{project.period[language as keyof typeof project.period]}</span>
             </div>
             <div className="flex flex-wrap gap-2 mb-6">
-              {project.technologies.map((tech) => (
+              {project.technologies[language as keyof typeof project.technologies].map((tech) => (
                 <Badge key={tech} variant="secondary">
                   {tech}
                 </Badge>
@@ -352,7 +371,7 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Problem Definition" : "문제 정의"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>
+                      <p className="text-base">
                         {project.stage1.problemDefinition[language as keyof typeof project.stage1.problemDefinition]}
                       </p>
                     </CardContent>
@@ -363,9 +382,19 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Hypothesis" : "가설"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="mb-4">
-                        {project.stage1.hypothesis[language as keyof typeof project.stage1.hypothesis]}
+                      <p className="text-base mb-4">
+                        {
+                          project.stage1.hypothesisDescription[
+                            language as keyof typeof project.stage1.hypothesisDescription
+                          ]
+                        }
                       </p>
+
+                      <div className="mb-4">
+                        <p className="text-base bg-muted/30 p-3 rounded-md border-l-4 border-primary">
+                          {project.stage1.hypothesis[language as keyof typeof project.stage1.hypothesis]}
+                        </p>
+                      </div>
 
                       {/* Stage 1 Metrics Table */}
                       <div className="overflow-x-auto">
@@ -400,7 +429,9 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Solution" : "실행 과정"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>{project.stage1.solution[language as keyof typeof project.stage1.solution]}</p>
+                      <p className="text-base">
+                        {project.stage1.solution[language as keyof typeof project.stage1.solution]}
+                      </p>
                     </CardContent>
                   </Card>
 
@@ -409,21 +440,18 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Results" : "결과"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="mb-4">{project.stage1.results[language as keyof typeof project.stage1.results]}</p>
+                      <p className="text-base mb-4">
+                        {project.stage1.results[language as keyof typeof project.stage1.results]}
+                      </p>
                       <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
                         <Image
-                          src="/images/stage1-exposure-vs-bookings-chart.png"
-                          alt="Stage 1 Results - Exposure vs Bookings Chart"
+                          src="/images/stage1-results-chart.svg"
+                          alt="Stage 1 Results Chart"
                           width={800}
                           height={400}
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="text-sm text-muted-foreground mt-2">
-                        {language === "en"
-                          ? "Graph showing exposure increasing from 5,000 to 14,200 over 7 days (July 1-7) while bookings remained flat at 50-55 level"
-                          : "7월 1일-7일 동안 노출이 5,000에서 14,200으로 증가했지만 예약수는 50-55 수준에서 평평하게 유지된 그래프"}
-                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -441,9 +469,18 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Problem Definition" : "문제 정의"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>
+                      <p className="text-base mb-4">
                         {project.stage2.problemDefinition[language as keyof typeof project.stage2.problemDefinition]}
                       </p>
+                      <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
+                        <Image
+                          src="/images/stage2-problem-chart.svg"
+                          alt="Stage 2 Problem Analysis Chart"
+                          width={800}
+                          height={400}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
                     </CardContent>
                   </Card>
 
@@ -452,9 +489,19 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Hypothesis" : "가설"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="mb-4">
-                        {project.stage2.hypothesis[language as keyof typeof project.stage2.hypothesis]}
+                      <p className="text-base mb-4">
+                        {
+                          project.stage2.hypothesisDescription[
+                            language as keyof typeof project.stage2.hypothesisDescription
+                          ]
+                        }
                       </p>
+
+                      <div className="mb-4">
+                        <p className="text-base bg-muted/30 p-3 rounded-md border-l-4 border-primary">
+                          {project.stage2.hypothesis[language as keyof typeof project.stage2.hypothesis]}
+                        </p>
+                      </div>
 
                       {/* Stage 2 Metrics Table */}
                       <div className="overflow-x-auto">
@@ -489,18 +536,142 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Solution" : "실행 과정"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="mb-4">
-                        {project.stage2.solution[language as keyof typeof project.stage2.solution]}
-                      </p>
-                      <div className="aspect-video w-full overflow-hidden rounded-lg">
+                      <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center mb-4">
                         <Image
-                          src="/images/thumbnail-before-after.png"
-                          alt="Thumbnail Before After Comparison"
+                          src="/images/thumbnail-analysis.png"
+                          alt="Thumbnail Analysis Components"
                           width={800}
                           height={400}
-                          className="w-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
+                      <p className="text-base mb-4">
+                        {project.stage2.solution[language as keyof typeof project.stage2.solution]}
+                      </p>
+                      <div className="overflow-x-auto">
+                        <table className="w-full border-collapse rounded-lg">
+                          <thead>
+                            <tr className="bg-muted/100">
+                              <th className="px-4 py-3 text-center font-medium rounded-tl-lg border-r border-muted/50 min-w-[80px] whitespace-nowrap text-sm">
+                                {language === "en" ? "Component" : "요소"}
+                              </th>
+                              <th className="px-4 py-3 text-center font-medium border-r border-muted/50 min-w-[200px] whitespace-nowrap text-sm">
+                                {language === "en" ? "Description" : "설명"}
+                              </th>
+                              <th className="px-4 py-3 text-center font-medium border-r border-muted/50 min-w-[100px] whitespace-nowrap text-sm">
+                                {language === "en" ? "Priority" : "우선순위"}
+                              </th>
+                              <th className="px-4 py-3 text-center font-medium rounded-tr-lg min-w-[150px] whitespace-nowrap text-sm">
+                                {language === "en" ? "Improvement Direction" : "개선 방향"}
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="bg-muted/50">
+                              <td className="px-4 py-3 border-r border-muted/50 font-medium text-sm text-center">
+                                {language === "en" ? "Title" : "제목"}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-sm">
+                                {language === "en"
+                                  ? "Doesn't require much effort to change but is an element that users pay attention to at least once."
+                                  : "바꾸는 데에 큰 품이 들지 않으나 사용자들이 한 번 쯤은 눈길을 주는 요소이다."}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-center">
+                                <Badge variant="destructive" className="text-xs">
+                                  {language === "en" ? "High" : "상"}
+                                </Badge>
+                              </td>
+                              <td className="px-4 py-3 text-sm">
+                                {language === "en"
+                                  ? "Insert the biggest advantage '14-person large capacity' into the title."
+                                  : "가장 큰 장점인 '14인 대형'을 제목에 삽입한다"}
+                              </td>
+                            </tr>
+                            <tr className="bg-muted/30">
+                              <td className="px-4 py-3 border-r border-muted/50 font-medium text-sm text-center">
+                                {language === "en" ? "Photo" : "사진"}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-sm">
+                                {language === "en"
+                                  ? "Takes up the largest area. Requires re-shooting so it takes more resources to change, but has high impact."
+                                  : "가장 넓은 면적을 차지한다. 재촬영을 해야 해서 바꿀 때 리소스는 많이 들겠지만 임팩트가 크다"}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-center">
+                                <Badge variant="secondary" className="text-xs">
+                                  {language === "en" ? "Medium" : "중"}
+                                </Badge>
+                              </td>
+                              <td className="px-4 py-3 text-sm">
+                                {language === "en"
+                                  ? "Shoot photos that show windows well to highlight Inspiroom's bright lighting advantage, and brighten the editing."
+                                  : "인스퍼룸의 장점인 환한 채광이 잘 보일 수 있게 창문이 잘 보이는 사진으로 촬영하고 보정도 밝게 한다."}
+                              </td>
+                            </tr>
+                            <tr className="bg-muted/50">
+                              <td className="px-4 py-3 border-r border-muted/50 font-medium text-sm text-center">
+                                {language === "en" ? "Price" : "가격"}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-sm">
+                                {language === "en"
+                                  ? "The first thing that catches the eye, and when the price is low, the effect of inducing clicks would be very large. However, since the actual price needs to be lowered, changes may negatively affect revenue."
+                                  : "가장 먼저 눈길이 가는 부분이며 가격이 낮을 때 클릭을 유도하는 효과는 매우 클 것이다. 단 실제로 가격을 낮춰야 하므로 변경 시 매출에 부정적 영향을 줄 수도 있다."}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-center">
+                                <Badge variant="secondary" className="text-xs">
+                                  {language === "en" ? "Medium" : "중"}
+                                </Badge>
+                              </td>
+                              <td className="px-4 py-3 text-sm">
+                                {language === "en"
+                                  ? "Set price to 1000 won during unpopular time slots so that 1000 won is displayed in the thumbnail."
+                                  : "비인기 시간대에 1000원으로 가격 설정하여 썸네일에 1000원으로 가격이 노출되게 설정"}
+                              </td>
+                            </tr>
+                            <tr className="bg-muted/30">
+                              <td className="px-4 py-3 border-r border-muted/50 font-medium text-sm text-center">
+                                {language === "en" ? "Tag" : "태그"}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-sm">
+                                {language === "en"
+                                  ? "Small in size so not very noticeable, but requires almost no resources to change and the first two can function as product information."
+                                  : "크기가 작아 눈에 잘 안 띄긴 하지만 변경하는 데에 리소스가 거의 들지 않고 맨 앞 두개 정도는 상품 정보로 기능할 수 있을 것이다."}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-center">
+                                <Badge variant="secondary" className="text-xs">
+                                  {language === "en" ? "Medium" : "중"}
+                                </Badge>
+                              </td>
+                              <td className="px-4 py-3 text-sm">
+                                {language === "en"
+                                  ? "Focus on space advantages like 'near station', 'large party room', etc."
+                                  : "역세권, 대형파티룸 등의 공간 장점을 중심으로 작성"}
+                              </td>
+                            </tr>
+                            <tr className="bg-muted/50">
+                              <td className="px-4 py-3 border-r border-muted/50 font-medium text-sm text-center">
+                                {language === "en" ? "Button" : "버튼"}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-sm">
+                                {language === "en"
+                                  ? "Having buttons wouldn't be bad, but doesn't seem to have a big impact. Flash coupons cost money to execute. Direct payment is already being done."
+                                  : "버튼이 있으면 나쁘지는 않겠지만 큰 영향을 주지는 않을 것 같다. 반짝쿠폰의 경우 집행하려면 비용이 든다. 바로결제는 이미 하고 있다."}
+                              </td>
+                              <td className="px-4 py-3 border-r border-muted/50 text-center">
+                                <Badge variant="outline" className="text-xs">
+                                  {language === "en" ? "Low" : "하"}
+                                </Badge>
+                              </td>
+                              <td className="px-4 py-3 text-sm">-</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <p className="text-sm text-muted-foreground mt-4">
+                        {language === "en"
+                          ? "* Capacity, comments, and likes cannot be changed immediately, so they are excluded from discussion."
+                          : "* 인원수와 댓글, 좋아요 수는 당장 변경할 수 없기 때문에 논의에서 제외한다."}
+                      </p>
                     </CardContent>
                   </Card>
 
@@ -509,21 +680,18 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Results" : "결과"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="mb-4">{project.stage2.results[language as keyof typeof project.stage2.results]}</p>
+                      <p className="text-base mb-4">
+                        {project.stage2.results[language as keyof typeof project.stage2.results]}
+                      </p>
                       <div className="aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
                         <Image
-                          src="/images/stage2-ctr-bookings-chart.png"
-                          alt="Stage 2 CTR and Bookings Results Chart"
+                          src="/images/stage2-results-chart.svg"
+                          alt="Stage 2 Results Chart"
                           width={800}
                           height={400}
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <p className="text-sm text-muted-foreground mt-2">
-                        {language === "en"
-                          ? "Graph showing CTR increasing from 1.5% to 3.9% and bookings increasing from 52 to 95 over 7 days (July 8-14)"
-                          : "7월 8일-14일 동안 클릭률이 1.5%에서 3.9%로, 예약수가 52건에서 95건으로 증가한 그래프"}
-                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -535,7 +703,9 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Overall Results" : "전체 성과"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>{project.overallResults[language as keyof typeof project.overallResults]}</p>
+                      <p className="text-base">
+                        {project.overallResults[language as keyof typeof project.overallResults]}
+                      </p>
                     </CardContent>
                   </Card>
 
@@ -544,7 +714,9 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Lessons Learned" : "배운 점"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>{project.lessonsLearned[language as keyof typeof project.lessonsLearned]}</p>
+                      <p className="text-base">
+                        {project.lessonsLearned[language as keyof typeof project.lessonsLearned]}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -576,7 +748,9 @@ export default function ProjectDetail() {
                     <CardTitle>{language === "en" ? "Problem Definition" : "문제 정의"}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>{project.problemDefinition[language as keyof typeof project.problemDefinition]}</p>
+                    <p className="text-base">
+                      {project.problemDefinition[language as keyof typeof project.problemDefinition]}
+                    </p>
                   </CardContent>
                 </Card>
 
@@ -585,7 +759,7 @@ export default function ProjectDetail() {
                     <CardTitle>{language === "en" ? "Hypothesis" : "가설"}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>{project.hypothesis[language as keyof typeof project.hypothesis]}</p>
+                    <p className="text-base">{project.hypothesis[language as keyof typeof project.hypothesis]}</p>
                   </CardContent>
                 </Card>
 
@@ -594,7 +768,7 @@ export default function ProjectDetail() {
                     <CardTitle>{language === "en" ? "Solution" : "실행 과정"}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>{project.solution[language as keyof typeof project.solution]}</p>
+                    <p className="text-base">{project.solution[language as keyof typeof project.solution]}</p>
                   </CardContent>
                 </Card>
 
@@ -620,7 +794,7 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Results" : "성과"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>{project.results[language as keyof typeof project.results]}</p>
+                      <p className="text-base">{project.results[language as keyof typeof project.results]}</p>
                     </CardContent>
                   </Card>
 
@@ -629,7 +803,9 @@ export default function ProjectDetail() {
                       <CardTitle>{language === "en" ? "Lessons Learned" : "배운 점"}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>{project.lessonsLearned[language as keyof typeof project.lessonsLearned]}</p>
+                      <p className="text-base">
+                        {project.lessonsLearned[language as keyof typeof project.lessonsLearned]}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
