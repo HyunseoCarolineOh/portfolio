@@ -94,7 +94,7 @@ const projects = {
       ko: "두 번에 걸친 퍼널 개선을 통해 주당 예약수를 0회에서 20회까지 높였습니다. 노출부터 클릭, 전환까지 각 퍼널 단계의 체계적인 분석을 통해 특정 병목 지점을 식별하고 해결할 수 있었으며, 결과적으로 인스퍼룸을 적자 상태에서 월 200만원의 지속적인 매출을 내는 사업체로 발전시켰습니다.",
     },
     lessonsLearned: {
-      en: "I realized that running ads isn’t always the answer. While ads can definitely boost traffic, if there’s an issue with the click-through rate (CTR), no amount of traffic will lead to conversions.",
+      en: "I realized that running ads isn't always the answer. While ads can definitely boost traffic, if there's an issue with the click-through rate (CTR), no amount of traffic will lead to conversions.",
       ko: "광고 집행이 모든 상황에서 답이 되지는 않는다는 것을 깨달았습니다. 광고는 트래픽을 확실하게 개선시킬 수 있기는 하지만, CTR에 문제가 있으면 트래픽이 아무리 많이 늘어봤자 전환으로 이어지지 않기 때문입니다.",
     },
     technologies: {
@@ -119,7 +119,7 @@ const projects = {
       ko: "기업 블로그 기획",
     },
     description: {
-      en: "Planned and designed a corporate blog for SpaceBase to establish brand rapport and enable sustainable content management without development resources.",
+      en: "Built SpaceBase's blog with scalable content management, no dev required.",
       ko: "공간 디자인 스튜디오 스페이스베이스의 브랜드 라포 형성을 위한 기업 블로그를 기획했습니다. 개발 리소스 없이 지속 가능한 콘텐츠 운영이 가능하도록 설계했습니다.",
     },
     period: {
@@ -127,12 +127,8 @@ const projects = {
       ko: "2025년 1월 - 2025년 2월",
     },
     problemDefinition: {
-      en: "SpaceBase recognized the need for corporate blog operation but lacked production capacity. They expected the blog to serve as a starting point for brand rapport formation, being more approachable than formal corporate introduction meetings.",
+      en: "SpaceBase recognized the need for corporate blog operation but lacked engineering resources. They expected the blog to serve as a starting point for brand rapport formation, being more approachable than formal corporate introduction meetings.",
       ko: "공간 디자인 스튜디오 스페이스베이스는 인바운드 유입을 늘리기 위한 채널 중 하나로 기업 블로그 운영의 필요성을 인식하고 있었지만, 팀 내부에 개발자가 없어 제작 여력이 부족하고, 블로그를 개발한다 하더라도 관리를 할 수 없는 상태였습니다.",
-    },
-    hypothesis: {
-      en: "By creating a user-friendly blog structure that balances client preferences with brand consistency, we can establish an effective brand communication channel that requires minimal maintenance.",
-      ko: "클라이언트의 화려한 UI 선호와 기존 브랜드 무드 유지 간 균형 고려한 사용자 친화적 블로그 구조를 만들면, 최소한의 유지보수로 효과적인 브랜드 커뮤니케이션 채널을 구축할 수 있을 것입니다.",
     },
     solution: {
       en: "① Information Architecture & Wireframe Design: Balanced client's preference for flashy UI with existing brand mood maintenance. Designed GNB to connect to existing site to avoid duplication with Contact and About pages. \n\n ② Framer CMS Implementation: Set up Framer CMS to enable content publishing without coding. Configured user-centric structure considering content publishing/editing/distribution from operator's perspective.",
@@ -148,9 +144,9 @@ const projects = {
     },
     technologies: {
       en: ["Framer CMS", "Information Architecture", "Wireframing", "UX Design", "Content Strategy"],
-      ko: ["프레이머 CMS", "정보 구조", "와이어프레임", "UX 디자인", "콘텐츠 전략"],
+      ko: ["프레이머 CMS", "프레이머 CMS", "정보 구조", "와이어프레임", "UX 디자인", "콘텐츠 전략"],
     },
-    images: ["/images/antiegg-web-cover.jpg"],
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-BvxlvAkg2vQo2CTPOdryaCIvpNlzNp.png"],
     relatedLinks: [
       {
         title: "Spacebase Blog",
@@ -205,7 +201,7 @@ const projects = {
   },
   "ai-chatbot": {
     title: {
-      en: "AI Chatbot Development",
+      en: "Customer service chatbot development",
       ko: "고객응대 AI 챗봇 개발",
     },
     description: {
@@ -221,12 +217,12 @@ const projects = {
       ko: "공간 대여 서비스 운영 중, 고객들의 반복적인 질문(위치, 입장 방법, 추가예약 등)에 매번 수동으로 대응하는 데 피로도가 컸고, 응답 지연으로 인해 추가예약 기회를 놓치는 경우도 자주 발생했습니다.",
     },
     hypothesis: {
-      en: "By automating responses to frequently asked questions and streamlining the additional booking process, we can reduce operational burden while capturing missed revenue opportunities.",
-      ko: "자주 묻는 질문에 대한 응답을 자동화하고 추가예약 프로세스를 간소화하면, 운영 부담을 줄이면서 놓치고 있던 매출 기회를 포착할 수 있을 것입니다.",
+      en: "By introducing an AI chatbot that handles repeated questions and manages same-day bookings on behalf of the host, \n\n① The operator's time spent on customer support will decrease to under 30 minutes per day\n\n② The number of additional monthly bookings is expected to increase from 4 to 10",
+      ko: "반복되는 질문에 대한 답변과 더불어, 당일 추가예약을 대신 해주는 AI 챗봇을 도입하면 \n\n① 공간 운영자가 CS에 들이는 시간이 일 30분 이하로 줄어들고 \n\n② 월 추가예약 건수가 4회에서 10회로 늘어날 것이다.",
     },
     solution: {
       en: "① AI Chatbot Auto-Response: Converted frequently asked questions to automatic responses. Continuously improved and tuned response content to prevent inappropriate answers. Successfully enabled chatbot to handle over 60% of total inquiries.\n\n② Additional Booking Process Automation: Previous: Manual SpaceCloud checking and price calculation when users inquired about additional bookings. Improved: Chatbot directly provides remaining time check links and price tables → customers can judge booking availability themselves and make payments.",
-      ko: "① AI 챗봇 자동 응답 구축: 자주 묻는 질문을 자동 응답으로 전환. 챗봇이 이상한 답변을 하지 않도록 지속적으로 응답 내용을 개선 및 튜닝. 결과적으로 전체 문의 중 60% 이상을 챗봇이 대응 가능하게 구현.\n\n② 추가예약 프로세스 자동화: 기존에는 사용자가 추가예약 문의 시 수동으로 스페이스클라우드 확인 및 가격 계산 후 답변했으나, 개선 후에는 챗봇이 직접 잔여 시간 확인 링크 및 가격 테이블을 안내하여 고객이 스스로 예약 가능 여부를 판단 후 입금할 수 있도록 구현.",
+      ko: "① AI 챗봇 자동 응답 구축: 자주 묻는 질문을 리스트업한 후 카카오톡 채널에 내장된 AI 자동 응답 기능에 그 내용을 학습시킴. 챗봇이 이상한 답변을 하지 않도록 지속적으로 응답 내용을 모니터링하며 튜닝. \n\n② 추가예약 프로세스 자동화: 기존에는 사용자가 추가예약 문의 시 운영자가 수동으로 스페이스클라우드 확인 및 가격 계산 후 답변했으나, 개선 후에는 챗봇이 직접 잔여 시간 확인 링크 및 가격 테이블을 안내하여 고객이 스스로 예약 가능 여부를 판단 후 입금할 수 있도록 구현.",
     },
     results: {
       en: "Revenue from additional bookings increased 2.1 times compared to before chatbot implementation. Operators were freed from repetitive tasks, and users received immediate responses, leading to increased satisfaction.",
@@ -289,6 +285,22 @@ export default function ProjectDetail() {
       </div>
     )
   }
+
+  // Helper function to get section titles based on project type
+  const getSectionTitles = (slug: string, language: string) => {
+    if (slug === "b2b-blog" || slug === "ai-chatbot") {
+      return {
+        problemDefinition: language === "en" ? "Situation" : "상황",
+        solution: language === "en" ? "Action" : "액션",
+      }
+    }
+    return {
+      problemDefinition: language === "en" ? "Problem Definition" : "문제 정의",
+      solution: language === "en" ? "Solution" : "실행 과정",
+    }
+  }
+
+  const sectionTitles = getSectionTitles(slug, language)
 
   return (
     <div className={`min-h-screen ${language === "ko" ? "font-pretendard" : ""}`}>
@@ -746,17 +758,80 @@ export default function ProjectDetail() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle>{language === "en" ? "Problem Definition" : "문제 정의"}</CardTitle>
+                    <CardTitle>{sectionTitles.problemDefinition}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-base">
+                    <p className="text-base mb-4">
                       {project.problemDefinition?.[language as keyof typeof project.problemDefinition] ||
                         "Problem definition not available"}
                     </p>
+                    {/* Add the opportunity flow graphic for ai-chatbot project */}
+                    {slug === "ai-chatbot" && (
+                      <div className="mt-6 p-6 bg-muted/20 rounded-lg">
+                        <div className="space-y-8">
+                          {/* Successful Scenario */}
+                          <div className="space-y-4">
+                            <h4 className="font-semibold text-green-700 dark:text-green-400">
+                              {language === "en" ? "✓ Successful Response Scenario" : "✓ 성공적인 응대 시나리오"}
+                            </h4>
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-4">
+                                <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Space in Use" : "공간 이용 중"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Extension Inquiry" : "시간 연장 문의"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-green-100 dark:bg-green-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Quick Response" : "신속 응대"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-green-200 dark:bg-green-800 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Additional Revenue" : "추가 수입 전환"}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Failed Scenario */}
+                          <div className="space-y-4">
+                            <h4 className="font-semibold text-red-700 dark:text-red-400">
+                              {language === "en" ? "✗ Missed Opportunity Scenario" : "✗ 기회 놓침 시나리오"}
+                            </h4>
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-4">
+                                <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Space in Use" : "공간 이용 중"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Extension Inquiry" : "시간 연장 문의"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-red-100 dark:bg-red-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Delayed Response" : "응대 늦어짐"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-red-100 dark:bg-red-800 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Time Expires" : "이용시간 종료"}
+                                </div>
+                                <div className="text-gray-400">→</div>
+                                <div className="bg-red-200 dark:bg-red-800 px-3 py-2 rounded-lg text-sm font-medium">
+                                  {language === "en" ? "Missed Revenue" : "추가 수입 기회 놓침"}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
 
-                {project.hypothesis && (
+                {/* Only show hypothesis for projects that have it and are not b2b-blog */}
+                {project.hypothesis && slug !== "b2b-blog" && (
                   <Card>
                     <CardHeader>
                       <CardTitle>{language === "en" ? "Hypothesis" : "가설"}</CardTitle>
@@ -771,13 +846,207 @@ export default function ProjectDetail() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle>{language === "en" ? "Solution" : "실행 과정"}</CardTitle>
+                    <CardTitle>{sectionTitles.solution}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <div className="text-base whitespace-pre-line">
-                      {project.solution?.[language as keyof typeof project.solution] || "Solution not available"}
-                    </div>
-                  </CardContent>
+                  {slug === "b2b-blog" ? (
+                    <CardContent>
+                      <p className="text-base mb-6">
+                        {language === "en"
+                          ? "The design process involved comprehensive information architecture planning and wireframe development to ensure optimal user experience for both content consumers and administrators."
+                          : "설계 과정에서는 콘텐츠 소비자와 관리자 모두에게 최적의 사용자 경험을 보장하기 위해 포괄적인 정보 구조 계획과 와이어프레임 개발이 포함되었습니다."}
+                      </p>
+
+                      <div className="space-y-6 mb-6">
+                        <div className="w-full overflow-hidden rounded-lg border">
+                          <iframe
+                            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                            width="100%"
+                            height="450"
+                            src="https://embed.figma.com/board/UYZjY43ERZUQujqeovuI4R/-%EC%8B%9C%EC%A6%8C16--%EC%8A%A4%EB%B2%A0-CMS-IA--Copy-?node-id=0-1&embed-host=share"
+                            allowFullScreen
+                          />
+                        </div>
+
+                        <div className="w-full overflow-hidden rounded-lg border">
+                          <iframe
+                            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                            width="100%"
+                            height="450"
+                            src="https://embed.figma.com/design/qd3dbG2DLGFAP2m8NchWDp/Spacebase-CMS-Wireframe?node-id=0-1&embed-host=share"
+                            allowFullScreen
+                          />
+                        </div>
+                      </div>
+
+                      <div className="text-base whitespace-pre-line">
+                        {project.solution?.[language as keyof typeof project.solution] || "Solution not available"}
+                      </div>
+                      {slug === "ai-chatbot" && (
+                        <div className="mt-8 p-6 bg-muted/20 rounded-lg">
+                          <div className="space-y-8">
+                            {/* Successful Scenario */}
+                            <div className="space-y-4">
+                              <h4 className="font-semibold text-green-700 dark:text-green-400">
+                                {language === "en" ? "✓ Successful Response Scenario" : "✓ 성공적인 응대 시나리오"}
+                              </h4>
+                              <div className="flex items-center justify-between">
+                                <div className="flex items-center space-x-4">
+                                  <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Space in Use" : "공간 이용 중"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Extension Inquiry" : "시간 연장 문의"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-green-100 dark:bg-green-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Quick Response" : "신속 응대"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-green-200 dark:bg-green-800 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Additional Revenue" : "추가 수입 전환"}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* Failed Scenario */}
+                            <div className="space-y-4">
+                              <h4 className="font-semibold text-red-700 dark:text-red-400">
+                                {language === "en" ? "✗ Missed Opportunity Scenario" : "✗ 기회 놓침 시나리오"}
+                              </h4>
+                              <div className="flex items-center justify-between">
+                                <div className="flex items-center space-x-4">
+                                  <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Space in Use" : "공간 이용 중"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-gray-100 dark:bg-gray-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Extension Inquiry" : "시간 연장 문의"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-red-100 dark:bg-red-900 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Delayed Response" : "응대 늦어짐"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-red-100 dark:bg-red-800 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Time Expires" : "이용시간 종료"}
+                                  </div>
+                                  <div className="text-gray-400">→</div>
+                                  <div className="bg-red-200 dark:bg-red-800 px-3 py-2 rounded-lg text-sm font-medium">
+                                    {language === "en" ? "Missed Revenue" : "추가 수입 기회 놓침"}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                      {slug === "ai-chatbot" && (
+                        <div className="mt-8 p-6 bg-muted/20 rounded-lg">
+                          <h4 className="font-semibold text-lg mb-6 text-center">
+                            {language === "en" ? "Additional Booking Process Comparison" : "추가예약 프로세스 비교"}
+                          </h4>
+
+                          <div className="space-y-8">
+                            {/* Before Process */}
+                            <div className="space-y-4">
+                              <h5 className="font-semibold text-red-700 dark:text-red-400">
+                                {language === "en" ? "Before: Manual Process" : "기존 추가예약 과정"}
+                              </h5>
+                              <div className="flex flex-col space-y-3">
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Additional Booking Inquiry" : "추가예약 문의 인입"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en"
+                                      ? "Admin Checks Availability"
+                                      : "관리자가 추가예약 가능한지 확인"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Manual Fee Calculation" : "추가금 수작업으로 계산"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Send Account Info & Fee" : "계좌번호와 함께 추가금 안내"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Customer Payment" : "예약자가 입금"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Payment Confirmation" : "입금확인"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Manual System Update" : "시스템에 해당 시간대 마감처리"}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* After Process */}
+                            <div className="space-y-4">
+                              <h5 className="font-semibold text-green-700 dark:text-green-400">
+                                {language === "en" ? "After: Automated Process" : "변경된 추가예약 과정"}
+                              </h5>
+                              <div className="flex flex-col space-y-3">
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-blue-100 dark:bg-blue-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en"
+                                      ? "Customer Checks Calendar"
+                                      : "예약자가 직접 캘린더에서 추가예약 가능한지 여부 확인"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-green-100 dark:bg-green-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en"
+                                      ? "AI Calculates Fee & Creates Payment Request"
+                                      : "AI가 추가금 계산해서 입금요청창 생성"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-blue-100 dark:bg-blue-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Customer Payment" : "예약자가 입금"}
+                                  </div>
+                                  <div className="text-gray-400">↓</div>
+                                </div>
+                                <div className="flex items-center space-x-3">
+                                  <div className="bg-green-100 dark:bg-green-800 px-3 py-2 rounded-lg text-sm font-medium text-center min-w-[120px]">
+                                    {language === "en" ? "Automatic System Update" : "시스템 자동 처리"}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </CardContent>
+                  ) : (
+                    <CardContent>
+                      <div className="text-base whitespace-pre-line">
+                        {project.solution?.[language as keyof typeof project.solution] || "Solution not available"}
+                      </div>
+                    </CardContent>
+                  )}
                 </Card>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

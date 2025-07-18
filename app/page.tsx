@@ -171,18 +171,12 @@ export default function Home() {
   }, [])
 
   const handleDownloadCV = () => {
-    // Create a temporary link to download CV
-    const link = document.createElement("a")
+    // Open Google Drive links in new tab
     if (language === "en") {
-      link.href = "/resume-hyunseo-oh.pdf"
-      link.download = "Resume_Hyunseo_Oh.pdf"
+      window.open("https://drive.google.com/file/d/1lpotnlmg_qUPPF2yDOyezeWiTtKnuGeO/view?usp=sharing", "_blank")
     } else {
-      link.href = "/resume-hyunseo-oh-korean.pdf"
-      link.download = "이력서_오현서.pdf"
+      window.open("https://drive.google.com/file/d/1YVbmBEnCICJiH8I7IcOy_vDYds3Kntpr/view?usp=sharing", "_blank")
     }
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
   }
 
   return (
@@ -455,8 +449,8 @@ export default function Home() {
                     </h3>
                     <p className="text-sm">
                       {language === "en"
-                        ? "UX Analysis and Application, Product Form Factor Studio, Communication Design, Design Psychology, Corporate Design Studio, Design Exploration, Design Research, Exhibition Design, Transmedia Workshop, Art and Entrepreneurship, Innovation Methodology and Process, Consumer Behavior"
-                        : "UX분석과응용, 제품폼팩터스튜디오, 커뮤니케이션디자인, 디자인심리, 기업적디자인스튜디오, 디자인탐구, 디자인리서치, 전시디자인, 트랜스미디어워크숍, 예술과창업, 혁신방법론과프로세스, 소비자행동"}
+                        ? "UX Analysis and Application, Product Form Factor Studio, Communication Design, Design Psychology, Corporate Design Studio, Design Exploration, Design Research, Exhibition Design, Transmedia Workshop\n\nArt and Entrepreneurship, Innovation Methodology and Process, Consumer Behavior"
+                        : "UX분석과응용, 제품폼팩터스튜디오, 커뮤니케이션디자인, 디자인심리, 기업적디자인스튜디오, 디자인탐구, 디자인리서치, 전시디자인, 트랜스미디어워크숍\n\n예술과창업, 혁신방법론과프로세스, 소비자행동"}
                     </p>
                   </div>
                 </CardContent>
@@ -559,7 +553,7 @@ export default function Home() {
                 <CardContent className="flex-grow">
                   <p className="text-sm">
                     {language === "en"
-                      ? "Planned and designed a corporate blog for SpaceBase to establish brand rapport and enable sustainable content management without development resources."
+                      ? "Built SpaceBase's blog with scalable content management, no dev required."
                       : "공간 디자인 스튜디오 스페이스베이스의 브랜드 라포 형성을 위한 기업 블로그를 기획했습니다. 개발 리소스 없이 지속 가능한 콘텐츠 운영이 가능하도록 설계했습니다."}
                   </p>
                 </CardContent>
