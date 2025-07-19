@@ -186,9 +186,10 @@ export default function Home() {
         {/* Hero Section */}
         <section id="home" className="py-12 md:py-24 lg:py-32 xl:py-40">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_320px] lg:gap-12 xl:grid-cols-[1fr_350px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+              {/* Left Column - Text, Buttons, and Profile Image */}
+              <div className="flex flex-col space-y-8">
+                <div className="space-y-6">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                     {language === "en" ? (
                       "Identify through data and learn through action"
@@ -200,27 +201,52 @@ export default function Home() {
                       </span>
                     )}
                   </h1>
+                  <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                    <Button onClick={handleDownloadCV} className="w-full min-[400px]:w-auto hero-button">
+                      <FileText className="mr-2 h-4 w-4" />
+                      {language === "en" ? "Resume" : "이력서"}
+                    </Button>
+                    <Button onClick={handleDownloadCV} className="w-full min-[400px]:w-auto hero-button">
+                      <FileText className="mr-2 h-4 w-4" />
+                      {language === "en" ? "CV" : "CV"}
+                    </Button>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button onClick={handleDownloadCV} className="w-full min-[400px]:w-auto hero-button">
-                    <FileText className="mr-2 h-4 w-4" />
-                    {language === "en" ? "Resume" : "이력서"}
-                  </Button>
-                  <Button onClick={handleDownloadCV} className="w-full min-[400px]:w-auto hero-button">
-                    <FileText className="mr-2 h-4 w-4" />
-                    {language === "en" ? "CV" : "CV"}
-                  </Button>
+
+                {/* Profile Image */}
+                <div className="flex items-center justify-center lg:justify-start">
+                  <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full">
+                    <Image
+                      src="/images/hyunseo-profile.jpg"
+                      alt="Hyunseo Oh"
+                      width={280}
+                      height={280}
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full">
-                  <Image
-                    src="/images/hyunseo-profile.jpg"
-                    alt="Hyunseo Oh"
-                    width={280}
-                    height={280}
-                    className="object-cover"
-                    priority
+
+              {/* Right Column - Chatbot */}
+              <div className="flex flex-col">
+                <div className="text-center lg:text-left mb-6">
+                  <h2 className="text-xl md:text-2xl font-bold mb-3">
+                    {language === "en" ? "Ask me anything" : "무엇이든 물어보세요"}
+                  </h2>
+                  <p className="text-muted-foreground text-sm">
+                    {language === "en"
+                      ? "Have questions about my experience or projects? Feel free to chat with me!"
+                      : "제 경험이나 프로젝트에 대해 궁금한 점이 있으시면 언제든 대화해보세요!"}
+                  </p>
+                </div>
+                <div className="w-full rounded-lg overflow-hidden shadow-lg border bg-background flex-1">
+                  <iframe
+                    src="https://www.chatbase.co/chatbot-iframe/wDcA_MUTwuWhOwMKBfguf"
+                    width="100%"
+                    style={{ height: "100%", minHeight: "600px" }}
+                    frameBorder="0"
+                    title="Chatbot"
                   />
                 </div>
               </div>

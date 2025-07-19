@@ -221,7 +221,7 @@ const projects = {
       ko: "반복되는 질문에 대한 답변과 더불어, 당일 추가예약을 대신 해주는 AI 챗봇을 도입하면 \n\n① 공간 운영자가 CS에 들이는 시간이 일 30분 이하로 줄어들고 \n\n② 월 추가예약 건수가 4회에서 10회로 늘어날 것이다.",
     },
     solution: {
-      en: "① AI Chatbot Auto-Response: Converted frequently asked questions to automatic responses. Continuously improved and tuned response content to prevent inappropriate answers. Successfully enabled chatbot to handle over 60% of total inquiries.\n\n② Additional Booking Process Automation: Previous: Manual SpaceCloud checking and price calculation when users inquired about additional bookings. Improved: Chatbot directly provides remaining time check links and price tables → customers can judge booking availability themselves and make payments.",
+      en: "① AI Chatbot Auto-Response: Converted frequently asked questions to automatic responses. Continuously improved and tuned response content to prevent inappropriate answers. Successfully enabled chatbot to handle over 60% of total inquiries.\n\n② Additional Booking Process Automation: Previously, checking availability and calculating prices for additional bookings had to be done manually through SpaceCloud whenever users made an inquiry. This process was improved by integrating a chatbot that directly provides users with links to check remaining time and view the price table, allowing them to assess availability and complete payments on their own.",
       ko: "① AI 챗봇 자동 응답 구축: 자주 묻는 질문을 리스트업한 후 카카오톡 채널에 내장된 AI 자동 응답 기능에 그 내용을 학습시킴. 챗봇이 이상한 답변을 하지 않도록 지속적으로 응답 내용을 모니터링하며 튜닝. \n\n② 추가예약 프로세스 자동화: 기존에는 사용자가 추가예약 문의 시 운영자가 수동으로 스페이스클라우드 확인 및 가격 계산 후 답변했으나, 개선 후에는 챗봇이 직접 잔여 시간 확인 링크 및 가격 테이블을 안내하여 고객이 스스로 예약 가능 여부를 판단 후 입금할 수 있도록 구현.",
     },
     results: {

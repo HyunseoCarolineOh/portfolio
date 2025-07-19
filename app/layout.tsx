@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Hyunseo Oh - Portfolio",
   description: "Personal portfolio website of Hyunseo Oh, showcasing skills, projects, and experience.",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
